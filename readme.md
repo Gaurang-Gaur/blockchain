@@ -12,3 +12,5 @@ Different type of storage places in EVM:
 // Memory: exist temporary during the transactions during the function call i.e temporay variable that can be modified
 // Storage: exist permanent even after the function call eg.Sum variable outside the function
 // calldata: similar to memory but can not be reassigned inside the function i.e temporary variable that can be modified; 
+
+Note: Data location can only be specified by array(string) , structure and maps so, we need to do use memory keyword before function parameters;
