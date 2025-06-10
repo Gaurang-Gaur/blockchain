@@ -1,0 +1,15 @@
+{
+  "name": "simplestorage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "ethers": "^6.14.3",
+    "fs-extra": "^11.3.0",
+    "solc": "0.8.20"
+  },
+  "scripts": {
+    "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . SimpleStorage.sol -o build/"
+  }
+}
