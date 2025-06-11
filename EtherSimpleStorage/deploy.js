@@ -41,7 +41,7 @@ async function main() {
     console.log("Current nonce before store transaction:", currentNonce);
 
     // Call store with an explicit nonce in the overrides
-    const txResponse = await contract.store(74343234, { nonce: currentNonce });
+    const txResponse = await contract.store(343432);
 
     console.log(`Transaction to store sent. Hash: ${txResponse.hash}`);
     const txReceipt = await txResponse.wait(1);
